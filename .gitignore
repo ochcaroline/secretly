@@ -1,0 +1,13 @@
+# Build artifacts
+dist/
+secretly
+
+# Environment
+.env
+.env.local
+
+# Go
+*.o
+*.a
+*.so
+.DS_Store

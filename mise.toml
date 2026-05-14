@@ -1,0 +1,16 @@
+[tools]
+go = "latest"
+
+[tasks.build]
+alias = "b"
+description = "build the project"
+run = "go build cmd/main.go"
+
+
+[tasks.run]
+alias = "r"
+description = "start the project"
+run = [
+    "go build -o dist/secretly cmd/main.go",
+    "./dist/secretly"
+]
